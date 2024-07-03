@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  /* position: absolute; */
+  /* position: relative; */
+}
+
+.exam-guide {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: auto;
+  border: 1px solid blue;
+  padding: 15px;
+  position: fixed;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  position: absolute;
+  right: 290px;
+  left: 220px;
+}
+
+.question-tags {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 5px;
+  margin-bottom: 10px;
+}
+
+.question-tags button {
+  height: 40px;
+}
+
+.answered-questions {
+  flex: 1;
+  padding: 0 20px;
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.timer {
+  border: 1px solid green;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: green;
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.answered-questions button.answered {
+  background-color: green;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+li {
+  font-family: cursive;
+}
+
+h4 {
+  text-align: center;
+}
+
+.answered-buttons {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.answered-buttons button {
+  width: 40px;
+  height: 40px;
+}
+
+.answered-buttons button.answered {
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 50%;
+}
+
+/* .question {
+  margin-bottom: 20px;
+} */
+
+/* .options button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+} */
+
+.pagination button,
+.answered-questions button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.selected-option {
+  background-color: green;
+  color: white;
+  border: none;
+}
