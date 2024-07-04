@@ -8,8 +8,19 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.container {
+.main-quiz {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.main-quiz h2 {
+  border: 1px solid purple;
+  width: inherit;
+  height: 70px;
 }
 
 .exam-guide {
