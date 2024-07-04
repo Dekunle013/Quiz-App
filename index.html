@@ -30,455 +30,459 @@
       </form>
     </section>
 
-    <section id="main-quiz" style="display: none;">
+    <section class="main-quiz" id="main-quiz" style="display: none;">
       <h2>Quiz</h2>
 
-      <div class="exam-guide">
-        <ul>
-          <li>Read each question carefully before selecting your answer.</li>
-          <h2>Exam Instructions</h2>
+      <div class="open-board">
+        <div class="exam-guide">
+          <ul>
+            <li>Read each question carefully before selecting your answer.</li>
+            <h2>Exam Instructions</h2>
+            
+            <li>There is only one correct answer for each question.</li>
+            <li>You cannot change your answers once submitted.</li>
+            <li>Use the timer on the top right corner to manage your time.</li>
+            <li>Click the "Submit Exam" button at the bottom to submit your answers.</li>
+          </ul>
+          <p><b>Important Note:</b>  All mobile devices and calculators are strictly prohibited.</p>
+        </div>
+  
+       <div class="board-two">
+        <div class="question-page">
+          <div class="question-tags" data-question-number="1">
+            <span>Question 1</span>
+            <button onclick="markAnswered(1)">A: Option A for question 1</button>
+            <button onclick="markAnswered(1)">B: Option B for question 1</button>
+            <button onclick="markAnswered(1)">C: Option C for question 1</button>
+            <button onclick="markAnswered(1)">D: Option D for question 1</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="2">
+            <span>Question 2</span>
+            <button onclick="markAnswered(2)">A: Option A for question 2</button>
+            <button onclick="markAnswered(2)">B: Option A for question 2</button>
+            <button onclick="markAnswered(2)">C: Option A for question 2</button>
+            <button onclick="markAnswered(2)">D: Option A for question 2</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="3">
+            <span>Question 3</span>
+            <button onclick="markAnswered(3)">A: Option A for question 3</button>
+            <button onclick="markAnswered(3)">B: Option A for question 3</button>
+            <button onclick="markAnswered(3)">C: Option A for question 3</button>
+            <button onclick="markAnswered(3)">D: Option A for question 3</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="4">
+            <span>Question 4</span>
+            <button onclick="markAnswered(4)">A: Option A for question 4</button>
+            <button onclick="markAnswered(4)">B: Option A for question 4</button>
+            <button onclick="markAnswered(4)">C: Option A for question 4</button>
+            <button onclick="markAnswered(4)">D: Option A for question 4</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="5">
+            <span>Question 5</span>
+            <button onclick="markAnswered(5)">A: Option A for question 5</button>
+            <button onclick="markAnswered(5)">B: Option A for question 5</button>
+            <button onclick="markAnswered(5)">C: Option A for question 5</button>
+            <button onclick="markAnswered(5)">D: Option A for question 5</button>
+          </div>
+        </div>
+  
+       <div class="question-page">
+        <div class="question-tags" data-question-number="6">
+          <span>Question 6</span>
+          <button>A: Option A for question 6</button>
+          <button>B: Option A for question 6</button>
+          <button>C: Option A for question 6</button>
+          <button>D: Option A for question 6</button>
+        </div>
+  
+        <div class="question-tags" data-question-number="7">
+          <span>Question 7</span>
+          <button>A: Option A for question 7</button>
+          <button>B: Option A for question 7</button>
+          <button>C: Option A for question 7</button>
+          <button>D: Option A for question 7</button>
+        </div>
+  
+        <div class="question-tags" data-question-number="8">
+          <span>Question 8</span>
+          <button>A: Option A for question 8</button>
+          <button>B: Option A for question 8</button>
+          <button>C: Option A for question 8</button>
+          <button>D: Option A for question 8</button>
+        </div>
+  
+        <div class="question-tags" data-question-number="9">
+          <span>Question 9</span>
+          <button>A: Option A for question 9</button>
+          <button>B: Option A for question 9</button>
+          <button>C: Option A for question 9</button>
+          <button>D: Option A for question 9</button>
+        </div>
+  
+        <div class="question-tags" data-question-number="10">
+          <span>Question 10</span>
+          <button>A: Option A for question 10</button>
+          <button>B: Option A for question 10</button>
+          <button>C: Option A for question 10</button>
+          <button>D: Option A for question 10</button>
+        </div>
+       </div>
+  
+        <div class="question-page">
+          <div class="question-tags" data-question-number="11">
+            <span>Question 11</span>
+            <button>A: Option A for question 11</button>
+            <button>B: Option A for question 11</button>
+            <button>C: Option A for question 11</button>
+            <button>D: Option A for question 11</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="12">
+            <span>Question 12</span>
+            <button>A: Option A for question 12</button>
+            <button>B: Option A for question 12</button>
+            <button>C: Option A for question 12</button>
+            <button>D: Option A for question 12</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="13">
+            <span>Question 13</span>
+            <button>A: Option A for question 13</button>
+            <button>B: Option A for question 13</button>
+            <button>C: Option A for question 13</button>
+            <button>D: Option A for question 13</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="14">
+            <span>Question 14</span>
+            <button>A: Option A for question 14</button>
+            <button>B: Option A for question 14</button>
+            <button>C: Option A for question 14</button>
+            <button>D: Option A for question 14</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="15">
+            <span>Question 15</span>
+            <button>A: Option A for question 15</button>
+            <button>B: Option A for question 15</button>
+            <button>C: Option A for question 15</button>
+            <button>D: Option A for question 15</button>
+          </div>
+        </div>
+  
+        <div class="question-page">
+          <div class="question-tags" data-question-number="16">
+            <span>Question 16</span>
+            <button>A: Option A for question 16</button>
+            <button>B: Option A for question 16</button>
+            <button>C: Option A for question 16</button>
+            <button>D: Option A for question 16</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="17">
+            <span>Question 17</span>
+            <button>A: Option A for question 17</button>
+            <button>B: Option A for question 17</button>
+            <button>C: Option A for question 17</button>
+            <button>D: Option A for question 17</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="18">
+            <span>Question 18</span>
+            <button>A: Option A for question 18</button>
+            <button>B: Option A for question 18</button>
+            <button>C: Option A for question 18</button>
+            <button>D: Option A for question 18</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="19">
+            <span>Question 19</span>
+            <button>A: Option A for question 19</button>
+            <button>B: Option A for question 19</button>
+            <button>C: Option A for question 19</button>
+            <button>D: Option A for question 19</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="20">
+            <span>Question 20</span>
+            <button>A: Option A for question 20</button>
+            <button>B: Option A for question 20</button>
+            <button>C: Option A for question 20</button>
+            <button>D: Option A for question 20</button>
+          </div>
+    
+        </div>
+       
+        <div class="question-page">
+          <div class="question-tags" data-question-number="21">
+            <span>Question 21</span>
+            <button>A: Option A for question 21</button>
+            <button>B: Option A for question 21</button>
+            <button>C: Option A for question 21</button>
+            <button>D: Option A for question 21</button>
+          </div>
+  
+          <div class="question-tags" data-question-number="22">
+            <span>Question 22</span>
+            <button>A: Option A for question 22</button>
+            <button>B: Option A for question 22</button>
+            <button>C: Option A for question 22</button>
+            <button>D: Option A for question 22</button>
+          </div>
           
-          <li>There is only one correct answer for each question.</li>
-          <li>You cannot change your answers once submitted.</li>
-          <li>Use the timer on the top right corner to manage your time.</li>
-          <li>Click the "Submit Exam" button at the bottom to submit your answers.</li>
-        </ul>
-        <p><b>Important Note:</b>  All mobile devices and calculators are strictly prohibited.</p>
-      </div>
-
-      <div class="question-page">
-        <div class="question-tags" data-question-number="1">
-          <span>Question 1</span>
-          <button onclick="markAnswered(1)">A: Option A for question 1</button>
-          <button onclick="markAnswered(1)">B: Option B for question 1</button>
-          <button onclick="markAnswered(1)">C: Option C for question 1</button>
-          <button onclick="markAnswered(1)">D: Option D for question 1</button>
+          <div class="question-tags" data-question-number="23">
+            <span>Question 23</span>
+            <button>A: Option A for question 23</button>
+            <button>B: Option A for question 23</button>
+            <button>C: Option A for question 23</button>
+            <button>D: Option A for question 23</button>
+          </div>
+  
+          <div class="question-tags" data-question-number="24">
+            <span>Question 24</span>
+            <button>A: Option A for question 24</button>
+            <button>B: Option A for question 24</button>
+            <button>C: Option A for question 24</button>
+            <button>D: Option A for question 24</button>
+          </div>
+  
+          <div class="question-tags" data-question-number="25">
+            <span>Question 25</span>
+            <button>A: Option A for question 25</button>
+            <button>B: Option A for question 25</button>
+            <button>C: Option A for question 25</button>
+            <button>D: Option A for question 25</button>
+          </div>
         </div>
   
-        <div class="question-tags" data-question-number="2">
-          <span>Question 2</span>
-          <button onclick="markAnswered(2)">A: Option A for question 2</button>
-          <button onclick="markAnswered(2)">B: Option A for question 2</button>
-          <button onclick="markAnswered(2)">C: Option A for question 2</button>
-          <button onclick="markAnswered(2)">D: Option A for question 2</button>
+        <div class="question-page">
+          <div class="question-tags" data-question-number="26">
+            <span>Question 26</span>
+            <button>A: Option A for question 26</button>
+            <button>B: Option A for question 26</button>
+            <button>C: Option A for question 26</button>
+            <button>D: Option A for question 26</button>
+          </div>
+  
+          <div class="question-tags" data-question-number="27">
+            <span>Question 27</span>
+            <button>A: Option A for question 27</button>
+            <button>B: Option A for question 27</button>
+            <button>C: Option A for question 27</button>
+            <button>D: Option A for question 27</button>
+          </div>
+  
+          <div class="question-tags" data-question-number="28">
+            <span>Question 28</span>
+            <button>A: Option A for question 28</button>
+            <button>B: Option A for question 28</button>
+            <button>C: Option A for question 28</button>
+            <button>D: Option A for question 28</button>
+          </div>
+  
+          <div class="question-tags" data-question-number="29">
+            <span>Question 29</span>
+            <button>A: Option A for question 29</button>
+            <button>B: Option A for question 29</button>
+            <button>C: Option A for question 29</button>
+            <button>D: Option A for question 29</button>
+          </div>
+  
+          <div class="question-tags" data-question-number="30">
+            <span>Question 30</span>
+            <button>A: Option A for question 30</button>
+            <button>B: Option A for question 30</button>
+            <button>C: Option A for question 30</button>
+            <button>D: Option A for question 30</button>
+          </div>
         </div>
   
-        <div class="question-tags" data-question-number="3">
-          <span>Question 3</span>
-          <button onclick="markAnswered(3)">A: Option A for question 3</button>
-          <button onclick="markAnswered(3)">B: Option A for question 3</button>
-          <button onclick="markAnswered(3)">C: Option A for question 3</button>
-          <button onclick="markAnswered(3)">D: Option A for question 3</button>
+       <div class="question-page">
+        <div class="question-tags" data-question-number="31">
+          <span>Question 31</span>
+          <button>A: Option A for question 31</button>
+          <button>B: Option A for question 31</button>
+          <button>C: Option A for question 31</button>
+          <button>D: Option A for question 31</button>
         </div>
   
-        <div class="question-tags" data-question-number="4">
-          <span>Question 4</span>
-          <button onclick="markAnswered(4)">A: Option A for question 4</button>
-          <button onclick="markAnswered(4)">B: Option A for question 4</button>
-          <button onclick="markAnswered(4)">C: Option A for question 4</button>
-          <button onclick="markAnswered(4)">D: Option A for question 4</button>
+        <div class="question-tags" data-question-number="32">
+          <span>Question 32</span>
+          <button>A: Option A for question 32</button>
+          <button>B: Option A for question 32</button>
+          <button>C: Option A for question 32</button>
+          <button>D: Option A for question 32</button>  
         </div>
   
-        <div class="question-tags" data-question-number="5">
-          <span>Question 5</span>
-          <button onclick="markAnswered(5)">A: Option A for question 5</button>
-          <button onclick="markAnswered(5)">B: Option A for question 5</button>
-          <button onclick="markAnswered(5)">C: Option A for question 5</button>
-          <button onclick="markAnswered(5)">D: Option A for question 5</button>
-        </div>
-      </div>
-
-     <div class="question-page">
-      <div class="question-tags" data-question-number="6">
-        <span>Question 6</span>
-        <button>A: Option A for question 6</button>
-        <button>B: Option A for question 6</button>
-        <button>C: Option A for question 6</button>
-        <button>D: Option A for question 6</button>
-      </div>
-
-      <div class="question-tags" data-question-number="7">
-        <span>Question 7</span>
-        <button>A: Option A for question 7</button>
-        <button>B: Option A for question 7</button>
-        <button>C: Option A for question 7</button>
-        <button>D: Option A for question 7</button>
-      </div>
-
-      <div class="question-tags" data-question-number="8">
-        <span>Question 8</span>
-        <button>A: Option A for question 8</button>
-        <button>B: Option A for question 8</button>
-        <button>C: Option A for question 8</button>
-        <button>D: Option A for question 8</button>
-      </div>
-
-      <div class="question-tags" data-question-number="9">
-        <span>Question 9</span>
-        <button>A: Option A for question 9</button>
-        <button>B: Option A for question 9</button>
-        <button>C: Option A for question 9</button>
-        <button>D: Option A for question 9</button>
-      </div>
-
-      <div class="question-tags" data-question-number="10">
-        <span>Question 10</span>
-        <button>A: Option A for question 10</button>
-        <button>B: Option A for question 10</button>
-        <button>C: Option A for question 10</button>
-        <button>D: Option A for question 10</button>
-      </div>
-     </div>
-
-      <div class="question-page">
-        <div class="question-tags" data-question-number="11">
-          <span>Question 11</span>
-          <button>A: Option A for question 11</button>
-          <button>B: Option A for question 11</button>
-          <button>C: Option A for question 11</button>
-          <button>D: Option A for question 11</button>
+        <div class="question-tags" data-question-number="33">
+          <span>Question 33</span>
+          <button>A: Option A for question 33</button>
+          <button>B: Option A for question 33</button>
+          <button>C: Option A for question 33</button>
+          <button>D: Option A for question 33</button>
         </div>
   
-        <div class="question-tags" data-question-number="12">
-          <span>Question 12</span>
-          <button>A: Option A for question 12</button>
-          <button>B: Option A for question 12</button>
-          <button>C: Option A for question 12</button>
-          <button>D: Option A for question 12</button>
+        <div class="question-tags" data-question-number="34">
+          <span>Question 34</span>
+          <button>A: Option A for question 34</button>
+          <button>B: Option A for question 34</button>
+          <button>C: Option A for question 34</button>
+          <button>D: Option A for question 34</button>
         </div>
   
-        <div class="question-tags" data-question-number="13">
-          <span>Question 13</span>
-          <button>A: Option A for question 13</button>
-          <button>B: Option A for question 13</button>
-          <button>C: Option A for question 13</button>
-          <button>D: Option A for question 13</button>
+        <div class="question-tags" data-question-number="35">
+          <span>Question 35</span>
+          <button>A: Option A for question 35</button>
+          <button>B: Option A for question 35</button>
+          <button>C: Option A for question 35</button>
+          <button>D: Option A for question 35</button>
+        </div>
+       </div>
+       
+        <div class="question-page">
+          <div class="question-tags" data-question-number="36">
+            <span>Question 36</span>
+            <button>A: Option A for question 36</button>
+            <button>B: Option A for question 36</button>
+            <button>C: Option A for question 36</button>
+            <button>D: Option A for question 36</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="37">
+            <span>Question 37</span>
+            <button>A: Option A for question 37</button>
+            <button>B: Option A for question 37</button>
+            <button>C: Option A for question 37</button>
+            <button>D: Option A for question 37</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="38">
+            <span>Question 38</span>
+            <button>A: Option A for question 38</button>
+            <button>B: Option A for question 38</button>
+            <button>C: Option A for question 38</button>
+            <button>D: Option A for question 38</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="39">
+            <span>Question 39</span>
+            <button>A: Option A for question 39</button>
+            <button>B: Option A for question 39</button>
+            <button>C: Option A for question 39</button>
+            <button>D: Option A for question 39</button>
+          </div>
+    
+          <div class="question-tags" data-question-number="40">
+            <span>Question 40</span>
+            <button>A: Option A for question 40</button>
+            <button>B: Option A for question 40</button>
+            <button>C: Option A for question 40</button>
+            <button>D: Option A for question 40</button>
+          </div>
         </div>
   
-        <div class="question-tags" data-question-number="14">
-          <span>Question 14</span>
-          <button>A: Option A for question 14</button>
-          <button>B: Option A for question 14</button>
-          <button>C: Option A for question 14</button>
-          <button>D: Option A for question 14</button>
+       <div class="question-page">
+        <div class="question-tags" data-question-number="41">
+          <span>Question 41</span>
+          <button>A: Option A for question 41</button>
+          <button>B: Option A for question 41</button>
+          <button>C: Option A for question 41</button>
+          <button>D: Option A for question 41</button>
         </div>
   
-        <div class="question-tags" data-question-number="15">
-          <span>Question 15</span>
-          <button>A: Option A for question 15</button>
-          <button>B: Option A for question 15</button>
-          <button>C: Option A for question 15</button>
-          <button>D: Option A for question 15</button>
-        </div>
-      </div>
-
-      <div class="question-page">
-        <div class="question-tags" data-question-number="16">
-          <span>Question 16</span>
-          <button>A: Option A for question 16</button>
-          <button>B: Option A for question 16</button>
-          <button>C: Option A for question 16</button>
-          <button>D: Option A for question 16</button>
+        <div class="question-tags" data-question-number="42">
+          <span>Question 42</span>
+          <button>A: Option A for question 42</button>
+          <button>B: Option A for question 42</button>
+          <button>C: Option A for question 42</button>
+          <button>D: Option A for question 42</button>
         </div>
   
-        <div class="question-tags" data-question-number="17">
-          <span>Question 17</span>
-          <button>A: Option A for question 17</button>
-          <button>B: Option A for question 17</button>
-          <button>C: Option A for question 17</button>
-          <button>D: Option A for question 17</button>
+        <div class="question-tags" data-question-number="43">
+          <span>Question 43</span>
+          <button>A: Option A for question 43</button>
+          <button>B: Option A for question 43</button>
+          <button>C: Option A for question 43</button>
+          <button>D: Option A for question 43</button>
         </div>
   
-        <div class="question-tags" data-question-number="18">
-          <span>Question 18</span>
-          <button>A: Option A for question 18</button>
-          <button>B: Option A for question 18</button>
-          <button>C: Option A for question 18</button>
-          <button>D: Option A for question 18</button>
+        <div class="question-tags" data-question-number="44">
+          <span>Question 44</span>
+          <button>A: Option A for question 44</button>
+          <button>B: Option A for question 44</button>
+          <button>C: Option A for question 44</button>
+          <button>D: Option A for question 44</button>
         </div>
   
-        <div class="question-tags" data-question-number="19">
-          <span>Question 19</span>
-          <button>A: Option A for question 19</button>
-          <button>B: Option A for question 19</button>
-          <button>C: Option A for question 19</button>
-          <button>D: Option A for question 19</button>
+        <div class="question-tags" data-question-number="45">
+          <span>Question 45</span>
+          <button>A: Option A for question 45</button>
+          <button>B: Option A for question 45</button>
+          <button>C: Option A for question 45</button>
+          <button>D: Option A for question 45</button>
         </div>
+       </div>
   
-        <div class="question-tags" data-question-number="20">
-          <span>Question 20</span>
-          <button>A: Option A for question 20</button>
-          <button>B: Option A for question 20</button>
-          <button>C: Option A for question 20</button>
-          <button>D: Option A for question 20</button>
-        </div>
+        <div class="question-page">
+          <div class="question-tags" data-question-number="46">
+            <span>Question 46</span>
+            <button>A: Option A for question 46</button>
+            <button>B: Option A for question 46</button>
+            <button>C: Option A for question 46</button>
+            <button>D: Option A for question 46</button>
+          </div>
   
-      </div>
-     
-      <div class="question-page">
-        <div class="question-tags" data-question-number="21">
-          <span>Question 21</span>
-          <button>A: Option A for question 21</button>
-          <button>B: Option A for question 21</button>
-          <button>C: Option A for question 21</button>
-          <button>D: Option A for question 21</button>
-        </div>
-
-        <div class="question-tags" data-question-number="22">
-          <span>Question 22</span>
-          <button>A: Option A for question 22</button>
-          <button>B: Option A for question 22</button>
-          <button>C: Option A for question 22</button>
-          <button>D: Option A for question 22</button>
-        </div>
-        
-        <div class="question-tags" data-question-number="23">
-          <span>Question 23</span>
-          <button>A: Option A for question 23</button>
-          <button>B: Option A for question 23</button>
-          <button>C: Option A for question 23</button>
-          <button>D: Option A for question 23</button>
-        </div>
-
-        <div class="question-tags" data-question-number="24">
-          <span>Question 24</span>
-          <button>A: Option A for question 24</button>
-          <button>B: Option A for question 24</button>
-          <button>C: Option A for question 24</button>
-          <button>D: Option A for question 24</button>
-        </div>
-
-        <div class="question-tags" data-question-number="25">
-          <span>Question 25</span>
-          <button>A: Option A for question 25</button>
-          <button>B: Option A for question 25</button>
-          <button>C: Option A for question 25</button>
-          <button>D: Option A for question 25</button>
-        </div>
-      </div>
-
-      <div class="question-page">
-        <div class="question-tags" data-question-number="26">
-          <span>Question 26</span>
-          <button>A: Option A for question 26</button>
-          <button>B: Option A for question 26</button>
-          <button>C: Option A for question 26</button>
-          <button>D: Option A for question 26</button>
-        </div>
-
-        <div class="question-tags" data-question-number="27">
-          <span>Question 27</span>
-          <button>A: Option A for question 27</button>
-          <button>B: Option A for question 27</button>
-          <button>C: Option A for question 27</button>
-          <button>D: Option A for question 27</button>
-        </div>
-
-        <div class="question-tags" data-question-number="28">
-          <span>Question 28</span>
-          <button>A: Option A for question 28</button>
-          <button>B: Option A for question 28</button>
-          <button>C: Option A for question 28</button>
-          <button>D: Option A for question 28</button>
-        </div>
-
-        <div class="question-tags" data-question-number="29">
-          <span>Question 29</span>
-          <button>A: Option A for question 29</button>
-          <button>B: Option A for question 29</button>
-          <button>C: Option A for question 29</button>
-          <button>D: Option A for question 29</button>
-        </div>
-
-        <div class="question-tags" data-question-number="30">
-          <span>Question 30</span>
-          <button>A: Option A for question 30</button>
-          <button>B: Option A for question 30</button>
-          <button>C: Option A for question 30</button>
-          <button>D: Option A for question 30</button>
-        </div>
-      </div>
-
-     <div class="question-page">
-      <div class="question-tags" data-question-number="31">
-        <span>Question 31</span>
-        <button>A: Option A for question 31</button>
-        <button>B: Option A for question 31</button>
-        <button>C: Option A for question 31</button>
-        <button>D: Option A for question 31</button>
-      </div>
-
-      <div class="question-tags" data-question-number="32">
-        <span>Question 32</span>
-        <button>A: Option A for question 32</button>
-        <button>B: Option A for question 32</button>
-        <button>C: Option A for question 32</button>
-        <button>D: Option A for question 32</button>  
-      </div>
-
-      <div class="question-tags" data-question-number="33">
-        <span>Question 33</span>
-        <button>A: Option A for question 33</button>
-        <button>B: Option A for question 33</button>
-        <button>C: Option A for question 33</button>
-        <button>D: Option A for question 33</button>
-      </div>
-
-      <div class="question-tags" data-question-number="34">
-        <span>Question 34</span>
-        <button>A: Option A for question 34</button>
-        <button>B: Option A for question 34</button>
-        <button>C: Option A for question 34</button>
-        <button>D: Option A for question 34</button>
-      </div>
-
-      <div class="question-tags" data-question-number="35">
-        <span>Question 35</span>
-        <button>A: Option A for question 35</button>
-        <button>B: Option A for question 35</button>
-        <button>C: Option A for question 35</button>
-        <button>D: Option A for question 35</button>
-      </div>
-     </div>
-     
-      <div class="question-page">
-        <div class="question-tags" data-question-number="36">
-          <span>Question 36</span>
-          <button>A: Option A for question 36</button>
-          <button>B: Option A for question 36</button>
-          <button>C: Option A for question 36</button>
-          <button>D: Option A for question 36</button>
-        </div>
+          <div class="question-tags" data-question-number="47">
+            <span>Question 47</span>
+            <button>A: Option A for question 47</button>
+            <button>B: Option A for question 47</button>
+            <button>C: Option A for question 47</button>
+            <button>D: Option A for question 47</button>
+          </div>
   
-        <div class="question-tags" data-question-number="37">
-          <span>Question 37</span>
-          <button>A: Option A for question 37</button>
-          <button>B: Option A for question 37</button>
-          <button>C: Option A for question 37</button>
-          <button>D: Option A for question 37</button>
-        </div>
+          <div class="question-tags" data-question-number="48">
+            <span>Question 48</span>
+            <button>A: Option A for question 48</button>
+            <button>B: Option A for question 48</button>
+            <button>C: Option A for question 48</button>
+            <button>D: Option A for question 48</button>
+          </div>
   
-        <div class="question-tags" data-question-number="38">
-          <span>Question 38</span>
-          <button>A: Option A for question 38</button>
-          <button>B: Option A for question 38</button>
-          <button>C: Option A for question 38</button>
-          <button>D: Option A for question 38</button>
-        </div>
+          <div class="question-tags" data-question-number="49">
+            <span>Question 49</span>
+            <button>A: Option A for question 49</button>
+            <button>B: Option A for question 49</button>
+            <button>C: Option A for question 49</button>
+            <button>D: Option A for question 49</button>
+          </div>
   
-        <div class="question-tags" data-question-number="39">
-          <span>Question 39</span>
-          <button>A: Option A for question 39</button>
-          <button>B: Option A for question 39</button>
-          <button>C: Option A for question 39</button>
-          <button>D: Option A for question 39</button>
+          <div class="question-tags" data-question-number="50">
+            <span>Question 50</span>
+            <button>A: Option A for question 50</button>
+            <button>B: Option A for question 50</button>
+            <button>C: Option A for question 50</button>
+            <button>D: Option A for question 50</button>
+          </div>
         </div>
+       </div>
   
-        <div class="question-tags" data-question-number="40">
-          <span>Question 40</span>
-          <button>A: Option A for question 40</button>
-          <button>B: Option A for question 40</button>
-          <button>C: Option A for question 40</button>
-          <button>D: Option A for question 40</button>
+  
+        <div class="board-three">
+            
+          <div class="timer">
+            0.00
+          </div>
+  
+          <h4>Answered Questions</h4>
+  
+          <div class="answered-buttons">
+    
+          </div>
         </div>
-      </div>
-
-     <div class="question-page">
-      <div class="question-tags" data-question-number="41">
-        <span>Question 41</span>
-        <button>A: Option A for question 41</button>
-        <button>B: Option A for question 41</button>
-        <button>C: Option A for question 41</button>
-        <button>D: Option A for question 41</button>
-      </div>
-
-      <div class="question-tags" data-question-number="42">
-        <span>Question 42</span>
-        <button>A: Option A for question 42</button>
-        <button>B: Option A for question 42</button>
-        <button>C: Option A for question 42</button>
-        <button>D: Option A for question 42</button>
-      </div>
-
-      <div class="question-tags" data-question-number="43">
-        <span>Question 43</span>
-        <button>A: Option A for question 43</button>
-        <button>B: Option A for question 43</button>
-        <button>C: Option A for question 43</button>
-        <button>D: Option A for question 43</button>
-      </div>
-
-      <div class="question-tags" data-question-number="44">
-        <span>Question 44</span>
-        <button>A: Option A for question 44</button>
-        <button>B: Option A for question 44</button>
-        <button>C: Option A for question 44</button>
-        <button>D: Option A for question 44</button>
-      </div>
-
-      <div class="question-tags" data-question-number="45">
-        <span>Question 45</span>
-        <button>A: Option A for question 45</button>
-        <button>B: Option A for question 45</button>
-        <button>C: Option A for question 45</button>
-        <button>D: Option A for question 45</button>
-      </div>
-     </div>
-
-      <div class="question-page">
-        <div class="question-tags" data-question-number="46">
-          <span>Question 46</span>
-          <button>A: Option A for question 46</button>
-          <button>B: Option A for question 46</button>
-          <button>C: Option A for question 46</button>
-          <button>D: Option A for question 46</button>
-        </div>
-
-        <div class="question-tags" data-question-number="47">
-          <span>Question 47</span>
-          <button>A: Option A for question 47</button>
-          <button>B: Option A for question 47</button>
-          <button>C: Option A for question 47</button>
-          <button>D: Option A for question 47</button>
-        </div>
-
-        <div class="question-tags" data-question-number="48">
-          <span>Question 48</span>
-          <button>A: Option A for question 48</button>
-          <button>B: Option A for question 48</button>
-          <button>C: Option A for question 48</button>
-          <button>D: Option A for question 48</button>
-        </div>
-
-        <div class="question-tags" data-question-number="49">
-          <span>Question 49</span>
-          <button>A: Option A for question 49</button>
-          <button>B: Option A for question 49</button>
-          <button>C: Option A for question 49</button>
-          <button>D: Option A for question 49</button>
-        </div>
-
-        <div class="question-tags" data-question-number="50">
-          <span>Question 50</span>
-          <button>A: Option A for question 50</button>
-          <button>B: Option A for question 50</button>
-          <button>C: Option A for question 50</button>
-          <button>D: Option A for question 50</button>
-        </div>
-      </div>
-
-
-      <div>
-            <!-- <div class="answered-questions" id="answeredQuestions">
-      <div class="timer">
-        0.00
-      </div> -->
-
-      <h4>Answered Questions</h4>
-
-      <div class="answered-buttons">
- 
-      </div>
       </div>
     </section>
   </main>

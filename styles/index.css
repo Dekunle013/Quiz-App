@@ -20,7 +20,16 @@ body {
 .main-quiz h2 {
   border: 1px solid purple;
   width: inherit;
-  height: 70px;
+  height: 40px;
+  font-family: cursive;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.open-board {
+  display: flex;
+  width: 100%;
 }
 
 .exam-guide {
@@ -33,7 +42,7 @@ body {
   position: fixed;
 }
 
-.quiz {
+.board-two {
   display: flex;
   flex-direction: column;
   flex: 3;
@@ -53,13 +62,14 @@ body {
   height: 40px;
 }
 
-.answered-questions {
+.board-three {
   flex: 1;
   padding: 0 20px;
   position: fixed;
   right: 0;
   display: flex;
   flex-direction: column;
+  border: 1px solid purple;
 }
 
 .timer {
