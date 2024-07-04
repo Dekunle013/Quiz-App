@@ -1,6 +1,7 @@
 const quizButton = document.getElementById('quiz-button');
 const studentInfo = document.getElementById('student-info');
 const form = document.getElementById('student-form');
+const answeredQuestions = document.getElementById('answeredQuestions');
 
 quizButton.addEventListener('click', () => {
   studentInfo.style.display = 'block';  // Show student info section
@@ -20,16 +21,19 @@ form.addEventListener('submit', (event) => {
   document.getElementById('main-quiz').style.display = 'block';
   document.getElementById('welcome').style.display = 'none';
   document.getElementById('student-info').style.display = 'none';
-
-   // Generate answered buttons
-   const answeredButtons = document.getElementById('answeredQuestions').querySelector('.answered-buttons');
-   answeredButtons.innerHTML = ''; // Clear existing buttons (optional)
+  
+  // Show answered questions section
+  answeredQuestions.style.display = 'block';
+  
+  // Generate answered buttons
+  const answeredButtons = document.getElementById('answeredQuestions').querySelector('.answered-buttons');
+  answeredButtons.innerHTML = ''; // Clear existing buttons (optional)
    
-   // Loop to create buttons for each question (replace 50 with your actual number of questions)
-   for (let i = 1; i <= 50; i++) {
-     const button = document.createElement('button');
-     button.textContent = i; // Set button text to question number
-     button.id = `btn-${i}`; // Set unique button ID
-     answeredButtons.appendChild(button);
-   }
+  // Loop to create buttons for each question (replace 50 with your actual number of questions)
+  for (let i = 1; i <= 50; i++) {
+    const button = document.createElement('button');
+    button.textContent = i; // Set button text to question number
+    button.id = `btn-${i}`; // Set unique button ID
+    answeredButtons.appendChild(button);
+  }
 });

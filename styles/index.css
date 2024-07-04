@@ -10,8 +10,6 @@ body {
 
 .container {
   display: flex;
-  /* position: absolute; */
-  /* position: relative; */
 }
 
 .exam-guide {
@@ -88,7 +86,8 @@ h4 {
 
 .answered-buttons {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }
 
 .answered-buttons button {
@@ -102,17 +101,6 @@ h4 {
   border: none;
   border-radius: 50%;
 }
-
-/* .question {
-  margin-bottom: 20px;
-} */
-
-/* .options button {
-  display: block;
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 100%;
-} */
 
 .pagination button,
 .answered-questions button {
