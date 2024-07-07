@@ -23,7 +23,7 @@ body {
 
 .open-board  {
   display: flex;
-  flex: 3;
+  /* flex: 3; */
 }
 
 .exam-guide {
@@ -45,6 +45,15 @@ body {
   left: 220px;
 }
 
+.answered-questions {
+  flex: 1;
+  padding: 0 20px;
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .question-tags {
   display: grid;
   grid-template-columns: auto;
@@ -54,15 +63,6 @@ body {
 
 .question-tags button {
   height: 40px;
-}
-
-.answered-questions {
-  flex: 1;
-  padding: 0 20px;
-  position: fixed;
-  right: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 .timer {
@@ -101,6 +101,7 @@ h4 {
 .answered-buttons {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
+  gap: 8px;
 }
 
 .answered-buttons button {
