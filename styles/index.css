@@ -1,3 +1,4 @@
+/* Your existing CSS */
 * {
   padding: 0;
   margin: 0;
@@ -8,28 +9,8 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.main-quiz {
+.container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-}
-
-.main-quiz h2 {
-  border: 1px solid purple;
-  width: inherit;
-  height: 40px;
-  font-family: cursive;
-  font-weight: 600;
-  font-size: 0.8rem;
-  margin-bottom: 10px;
-}
-
-.open-board {
-  display: flex;
-  width: 100%;
 }
 
 .exam-guide {
@@ -42,7 +23,7 @@ body {
   position: fixed;
 }
 
-.board-two {
+.quiz {
   display: flex;
   flex-direction: column;
   flex: 3;
@@ -62,14 +43,13 @@ body {
   height: 40px;
 }
 
-.board-three {
+.answered-questions {
   flex: 1;
   padding: 0 20px;
   position: fixed;
   right: 0;
   display: flex;
   flex-direction: column;
-  border: 1px solid purple;
 }
 
 .timer {
@@ -88,12 +68,10 @@ body {
   margin-bottom: 20px;
 }
 
-/* .answered-questions button.answered {
+.answered-questions button.answered {
   background-color: green;
   color: white;
-} */
-
-
+}
 
 h2 {
   text-align: center;
@@ -109,8 +87,7 @@ h4 {
 
 .answered-buttons {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  grid-template-columns: auto auto auto auto auto;
 }
 
 .answered-buttons button {
@@ -123,17 +100,4 @@ h4 {
   color: white;
   border: none;
   border-radius: 50%;
-}
-
-/* .pagination button,
-.answered-questions button {
-  margin: 5px;
-  padding: 10px;
-  cursor: pointer;
-} */
-
-.selected-option {
-  background-color: green;
-  color: white;
-  border: none;
 }
