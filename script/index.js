@@ -45,10 +45,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Define the markAnswered function
-  window.markAnswered = function(questionNumber) {
-    const button = document.getElementById(`btn-${questionNumber}`);
-    if (button) {
-      button.classList.add('answered');
+  window.markAnswered = function(button, questionNumber) {
+    // Deselect any previously selected options for this question
+    const questionTags = document.querySelector(`[data-question-number="${questionNumber}"]`);
+    if (questionTags) {
+      const buttons = questionTags.querySelectorAll('button');
+      buttons.forEach(btn => btn.classList.remove('selected-option'));
+    }
+    
+    // Mark the selected button as answered
+    button.classList.add('selected-option');
+    
+    // Mark the corresponding button in the answered questions section
+    const answeredButton = document.getElementById(`btn-${questionNumber}`);
+    if (answeredButton) {
+      answeredButton.classList.add('answered');
     }
   };
 });
