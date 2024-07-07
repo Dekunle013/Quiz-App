@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', (event) => {
 const quizButton = document.getElementById('quiz-button');
 const studentInfo = document.getElementById('student-info');
 const form = document.getElementById('student-form');
@@ -36,4 +37,12 @@ form.addEventListener('submit', (event) => {
     button.id = `btn-${i}`; // Set unique button ID
     answeredButtons.appendChild(button);
   }
+});
+
+window.markAnswered = function (questionNumber) {
+   const button = document.getElementById(`btn-${questionNumber}`);
+   if (button) {
+    button.classList.add('answered');
+   }
+};
 });

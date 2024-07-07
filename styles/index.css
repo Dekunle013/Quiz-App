@@ -88,10 +88,12 @@ body {
   margin-bottom: 20px;
 }
 
-.answered-questions button.answered {
+/* .answered-questions button.answered {
   background-color: green;
   color: white;
-}
+} */
+
+
 
 h2 {
   text-align: center;
@@ -123,12 +125,12 @@ h4 {
   border-radius: 50%;
 }
 
-.pagination button,
+/* .pagination button,
 .answered-questions button {
   margin: 5px;
   padding: 10px;
   cursor: pointer;
-}
+} */
 
 .selected-option {
   background-color: green;
