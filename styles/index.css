@@ -9,8 +9,21 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.container {
+.main-quiz {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.main-quiz h2 {
+  font-family: cursive;
+  font-size: 1.2rem;
+}
+
+.open-board  {
+  display: flex;
+  flex: 3;
 }
 
 .exam-guide {
