@@ -63,3 +63,60 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 });
+
+// Question page navigation
+const questionPages = document.querySelectorAll('.question-page');
+
+function showPage(pageIndex) {
+  questionPages.forEach((page, index) => {
+    page.style.display = index === pageIndex ? 'block' : 'none';
+  });
+}
+
+//Calculate the total number of question pages(assuming 5 questions per page)
+const numQuestionPages = Match.ceil(50 / 5);
+
+//Generate an array of button groups based on the number of question pages
+const pageButtons = [];
+for (let i = 0; i < numQuestionPages; i++) {
+  const buttonGroup = [];
+  for (let j = 1; j <= 5; j++) {
+    const buttonNumber = (i * 5) + j;
+
+    if (buttonNumber <= 50) {
+      buttonGroup.push(buttonNumber);
+    }
+  }
+  pageButtons.push(buttonGroup);
+}
+
+//Add event listener for navigation buttons
+pageButtons.forEach(buttons, pageIndex) ==> {
+  buttons.forEach(buttonNumber => {
+    document.getElementById(`btn-${buttonNumber}`).addEventListener('click', () => showPage(pageIndex));
+  });
+}
+
+// Assume the first question page is displayed initially
+// showPage(0);
+
+// Add event listeners for navigation buttons
+//  const pageButtons = [
+// [1, 2, 3, 4, 5],
+// [6, 7, 8, 9, 10],
+// [11, 12, 13, 14, 15],
+// [16, 17, 18, 19, 20],
+// [21, 22, 23, 24, 25],
+// [26, 27, 28, 29 ,30],
+// [31, 32, 33, 34, 35],
+// [36, 37, 38, 39, 40],
+// [41, 42, 43, 44, 45],
+// [46, 47, 48, 49, 50],
+// ];
+
+// pageButtons.forEach((buttons, pageIndex) => {
+//   buttons.forEach(buttonNumber => {
+//     const buttonIndex = Math.ceil(buttonNumber / 5) - 1; // Calculate the button index based on question number
+//     document.getElementById(`btn-${buttonNumber}`).addEventListener('click', () => showPage(buttonIndex));
+//   });
+// });
